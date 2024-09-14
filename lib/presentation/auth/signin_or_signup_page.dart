@@ -108,7 +108,7 @@ class SigninOrSignupPage extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                              color: context.isDarkMode ? Colors.white : Colors.black
+                              // color: context.isDarkMode ? Colors.white : Colors.black
                             ),
                           )
                         ),
