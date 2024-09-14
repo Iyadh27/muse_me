@@ -1,0 +1,126 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/configs/app_images.dart';
+import 'package:flutter_application_1/core/configs/app_vectors.dart';
+import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
+import 'package:flutter_application_1/presentation/auth/signin_or_signup_page.dart';
+import 'package:flutter_svg/svg.dart';
+
+class ChooseModePage extends StatelessWidget {
+  const ChooseModePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Stack(
+      children: [
+        Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(AppImages.chooseModeBG),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(40),
+          child: Column(
+            children: [
+              Align(
+                  alignment: Alignment.topCenter,
+                  child: SvgPicture.asset(AppVectors.logo)),
+              const Spacer(),
+              const Text(
+                "Choose Mode",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      ClipOval(
+                        child: Container(
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: AppColors.grey,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Container(
+                            child: SvgPicture.asset(AppVectors.moon,
+                                fit: BoxFit.none),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Dark Mode",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 17,
+                            color: AppColors.grey),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 80,
+                  ),
+                  Column(
+                    children: [
+                      ClipOval(
+                        child: Container(
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: AppColors.grey,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Container(
+                            child: SvgPicture.asset(AppVectors.sun,
+                                fit: BoxFit.none),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Light Mode",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 17,
+                            color: AppColors.grey),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 40,
+              ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SigninOrSignupPage()));
+            },
+            style: ElevatedButton.styleFrom(
+              minimumSize: const Size.fromHeight(80),
+            ),
+            child: const Text("Continue"),
+          ),
+            ],
+          ),
+        )
+      ],
+    ));
+  }
+}
+
+class Colours {}
