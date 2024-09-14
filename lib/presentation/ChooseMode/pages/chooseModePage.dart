@@ -38,7 +38,7 @@ class ChooseModePage extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
@@ -56,21 +56,19 @@ class ChooseModePage extends StatelessWidget {
                           child: Container(
                             width: 80,
                             height: 80,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: AppColors.grey,
                               shape: BoxShape.circle,
                             ),
-                            child: Container(
-                              child: SvgPicture.asset(AppVectors.moon,
-                                  fit: BoxFit.none),
-                            ),
+                            child: SvgPicture.asset(AppVectors.moon,
+                                fit: BoxFit.none),
                           ),
                         ),
                       ),
                       const SizedBox(
                         height: 15,
                       ),
-                      Text(
+                      const Text(
                         "Dark Mode",
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
@@ -79,7 +77,7 @@ class ChooseModePage extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 80,
                   ),
                   Column(
@@ -94,7 +92,7 @@ class ChooseModePage extends StatelessWidget {
                           child: Container(
                             width: 80,
                             height: 80,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: AppColors.grey,
                               shape: BoxShape.circle,
                             ),
@@ -108,7 +106,7 @@ class ChooseModePage extends StatelessWidget {
                       const SizedBox(
                         height: 15,
                       ),
-                      Text(
+                      const Text(
                         "Light Mode",
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
@@ -119,7 +117,7 @@ class ChooseModePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               ElevatedButton(
@@ -141,5 +139,3 @@ class ChooseModePage extends StatelessWidget {
     ));
   }
 }
-
-class Colours {}

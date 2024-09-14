@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/common/button/basic_app_button.dart';
+import 'package:flutter_application_1/presentation/widgets/button/basic_app_button.dart';
 import 'package:flutter_application_1/core/configs/app_images.dart';
 import 'package:flutter_application_1/core/configs/app_vectors.dart';
 import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
