@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presentation/widgets/button/basic_app_button.dart';
-import 'package:flutter_application_1/core/configs/app_images.dart';
-import 'package:flutter_application_1/core/configs/app_vectors.dart';
-import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
-import 'package:flutter_application_1/presentation/ChooseMode/pages/chooseModePage.dart';
+import 'package:muse_me/presentation/widgets/button/basic_app_button.dart';
+import 'package:muse_me/core/configs/app_images.dart';
+import 'package:muse_me/core/configs/app_vectors.dart';
+import 'package:muse_me/core/configs/theme/app_colors.dart';
+import 'package:muse_me/presentation/ChooseMode/pages/chooseModePage.dart';
 import 'package:flutter_svg/svg.dart';
 
 class GetStartedPage extends StatelessWidget {

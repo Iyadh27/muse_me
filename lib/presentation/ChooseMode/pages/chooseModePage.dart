@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/configs/app_images.dart';
-import 'package:flutter_application_1/core/configs/app_vectors.dart';
-import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
-import 'package:flutter_application_1/presentation/ChooseMode/bloc/theme_cubit.dart';
-import 'package:flutter_application_1/presentation/auth/signin_or_signup_page.dart';
+import 'package:muse_me/core/configs/app_images.dart';
+import 'package:muse_me/core/configs/app_vectors.dart';
+import 'package:muse_me/core/configs/theme/app_colors.dart';
+import 'package:muse_me/presentation/ChooseMode/bloc/theme_cubit.dart';
+import 'package:muse_me/presentation/auth/signin_or_signup_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 

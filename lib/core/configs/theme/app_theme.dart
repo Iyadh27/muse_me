@@ -1,5 +1,5 @@
 // import 'package:flutter/material.dart';
-// import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
+// import 'package:muse_me/core/configs/theme/app_colors.dart';
 
 // class AppTheme {
 //   static final lightTheme = ThemeData(
@@ -39,7 +39,7 @@
 // }
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
+import 'package:muse_me/core/configs/theme/app_colors.dart';
 
 class AppTheme {
   static final lightTheme = ThemeData(
@@ -81,7 +81,7 @@ class AppTheme {
           overlayShape: SliderComponentShape.noOverlay,
           activeTrackColor: Color(0xffB7B7B7),
           inactiveTrackColor: Colors.grey.withOpacity(0.3),
-          thumbColor: const Color(0xffB7B7B7)),
+          thumbColor: Color(0xffB7B7B7)),
       inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.transparent,

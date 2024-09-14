@@ -1,4 +1,4 @@
-# flutter_application_1
+# muse_me
 
 A new Flutter project.
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presentation/widgets/basicAppbar.dart';
-import 'package:flutter_application_1/presentation/widgets/button/basic_app_button.dart';
-import 'package:flutter_application_1/common/helpers/is_dark_mode.dart';
-import 'package:flutter_application_1/core/configs/app_images.dart';
-import 'package:flutter_application_1/core/configs/app_vectors.dart';
-import 'package:flutter_application_1/core/configs/theme/app_colors.dart';
-import 'package:flutter_application_1/presentation/auth/signin.dart';
-import 'package:flutter_application_1/presentation/auth/signup.dart';
+import 'package:muse_me/presentation/widgets/basicAppbar.dart';
+import 'package:muse_me/presentation/widgets/button/basic_app_button.dart';
+import 'package:muse_me/common/helpers/is_dark_mode.dart';
+import 'package:muse_me/core/configs/app_images.dart';
+import 'package:muse_me/core/configs/app_vectors.dart';
+import 'package:muse_me/core/configs/theme/app_colors.dart';
+import 'package:muse_me/presentation/auth/signin.dart';
+import 'package:muse_me/presentation/auth/signup.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SigninOrSignupPage extends StatelessWidget {
@@ -29,7 +29,6 @@ class SigninOrSignupPage extends StatelessWidget {
           Align(
               alignment: Alignment.bottomLeft,
               child: Image.asset(AppImages.signinorsignup)),
-
           Align(
               alignment: Alignment.center,
               child: Padding(
