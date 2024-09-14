@@ -15,9 +15,9 @@ class SigninOrSignupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const BasicAppbar(),
       body: Stack(
         children: [
-          const BasicAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(AppVectors.topright),
