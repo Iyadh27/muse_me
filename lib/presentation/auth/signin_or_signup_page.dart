@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/common/button/basic_app_button.dart';
+import 'package:flutter_application_1/presentation/widgets/basicAppbar.dart';
+import 'package:flutter_application_1/presentation/widgets/button/basic_app_button.dart';
 import 'package:flutter_application_1/common/helpers/is_dark_mode.dart';
 import 'package:flutter_application_1/core/configs/app_images.dart';
 import 'package:flutter_application_1/core/configs/app_vectors.dart';
@@ -16,7 +17,7 @@ class SigninOrSignupPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // const BasicAppbar(),
+          const BasicAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(AppVectors.topright),
